@@ -1,0 +1,27 @@
+id: max-value
+name: Max Value
+difficulty: Easy
+description:
+  - Given an array of integers nums, return a list of all indices where the maximum value in the array appears.
+  - If the array is empty, return an empty list.
+template: |
+  class Solution:
+    def maxValue(self, nums: list[int]) -> list[int]:
+testCases:
+  - input:  maxValue([2,15,11,1])
+    displayInput: 
+      - nums = [2, 15, 11, 1]
+    output: "[1]"
+  - input:  maxValue([3,2,4])
+    displayInput: 
+      - nums = [3, 2, 4]
+    output: "[2]"
+  - input:  maxValue([3,3])
+    displayInput: 
+      - nums = [3, 3]
+    output: "[0, 1]"
+  - input:  maxValue([])
+    displayInput: 
+       - nums = []
+    output: "[]"
+  
